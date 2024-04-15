@@ -1,5 +1,6 @@
 import DegitalSection from "@/components/DegitalSection";
 import DevelopmentSection from "@/components/DevelopmentSection";
+import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <DevelopmentSection />
       <DegitalSection />
+      <FaqSection />
     </>
   );
 }

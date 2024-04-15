@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HeroImg from "@/public/assets/Hero_Image.png";
-import Button from "@/components/Button";
+import Button from "@/components/ui/Button";
 
 const HeroSection = () => {
   return (

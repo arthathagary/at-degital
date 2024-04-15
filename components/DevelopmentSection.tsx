@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ComputerImg from "@/public/assets/image2.svg";
-import Button from "./Button";
+import Button from "./ui/Button";
 
 const DevelopmentSection = () => {
   return (
