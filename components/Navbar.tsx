@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <>
       {/* desktop menu */}
-      <nav className="bg-primary-color px-5 py-[26px] h-[77px] flex justify-between items-center sticky z-30 top-0">
+      <nav className="bg-primary-color px-5 md:px-10 py-[26px] h-[77px] flex justify-between items-center sticky z-30 top-0">
         <div>
           <Logo />
         </div>
@@ -47,7 +47,7 @@ function Navbar() {
       {/* mobile menu */}
 
       <nav
-        className={`lg:hidden z-50 px-5 py-[26px] text-black absolute top-0 right-0 bottom-0 left-0 w-full h-screen bg-white ${
+        className={`lg:hidden z-50 px-5  py-[26px] text-black absolute top-0 right-0 bottom-0 left-0 w-full h-screen bg-white ${
           isOpen
             ? "transition-transform ease-in duration-300 transform translate-x-0"
             : "transition-transform ease-out duration-300 transform -translate-x-full"

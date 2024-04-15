@@ -10,8 +10,8 @@ interface AccordianProps {
 const Accordian = ({ question, answer }: AccordianProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#FAF8FF] p-6 rounded-[7px] mb-4 w-full">
-      <div className="flex w-full justify-between ">
+    <div className="bg-[#FAF8FF] p-6 rounded-[7px] mb-4">
+      <div className="flex w-full justify-between">
         <p
           className={`${
             isOpen ? `text-primary-color` : `text-black`
