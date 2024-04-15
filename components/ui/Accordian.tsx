@@ -27,9 +27,9 @@ const Accordian = ({ question, answer }: AccordianProps) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-minus text-primary-color cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -44,9 +44,9 @@ const Accordian = ({ question, answer }: AccordianProps) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-plus cursor-pointer "
             onClick={() => setIsOpen(!isOpen)}
           >
