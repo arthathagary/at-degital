@@ -15,7 +15,7 @@ const Accordian = ({ question, answer }: AccordianProps) => {
         <p
           className={`${
             isOpen ? `text-primary-color` : `text-black`
-          } font-medium`}
+          } font-medium cursor-pointer`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {question}
