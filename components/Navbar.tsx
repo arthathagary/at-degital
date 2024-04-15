@@ -50,7 +50,7 @@ function Navbar() {
         className={`lg:hidden z-50 px-5  py-[26px] text-black absolute top-0 right-0 bottom-0 left-0 w-full h-screen bg-white ${
           isOpen
             ? "transition-transform ease-in duration-300 transform translate-x-0"
-            : "transition-transform ease-out duration-300 transform translate-x-full"
+            : "transition-transform ease-out duration-300 transform -translate-x-full"
         }`}
       >
         {" "}
