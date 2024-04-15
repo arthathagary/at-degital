@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import Logo from "./Logo";
+import Logo from "@/components/Logo";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,13 +27,20 @@ function Navbar() {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            className="lg:hidden lucide lucide-menu text-white cursor-pointer"
+            className="md:hidden lucide lucide-menu text-white cursor-pointer"
             onClick={toggleMenu}
           >
             <line x1="4" x2="20" y1="12" y2="12" />
             <line x1="4" x2="20" y1="6" y2="6" />
             <line x1="4" x2="20" y1="18" y2="18" />
           </svg>
+
+          <ul className="hidden md:flex gap-7 uppercase text-white">
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Careers</li>
+          </ul>
         </div>
       </nav>
 
