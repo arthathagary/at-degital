@@ -10,12 +10,13 @@ interface AccordianProps {
 const Accordian = ({ question, answer }: AccordianProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#FAF8FF] p-6 rounded-[7px] mb-4">
+    <div className="bg-[#FAF8FF] p-6 rounded-[7px] mb-4 w-full">
       <div className="flex w-full justify-between ">
         <p
           className={`${
             isOpen ? `text-primary-color` : `text-black`
           } font-medium`}
+          onClick={() => setIsOpen(!isOpen)}
         >
           {question}
         </p>
@@ -57,7 +58,9 @@ const Accordian = ({ question, answer }: AccordianProps) => {
       </div>
 
       <div>
-        {isOpen && <p className="text-[14px] text-[#6F6C90] mt-4">{answer}</p>}
+        {isOpen && (
+          <p className={`text-[14px] text-[#6F6C90] mt-4`}>{answer}</p>
+        )}
       </div>
     </div>
   );

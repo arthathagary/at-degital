@@ -20,13 +20,13 @@ const FaqSection = () => {
     },
   ];
   return (
-    <section className="flex flex-col justify-center items-center px-5 mt-6">
+    <section className="flex flex-col justify-center  px-5 mt-6 md:my-16 w-full items-stretch">
       <div>
-        <h2 className="text-primary-color text-xl font-semibold text-center mb-6">
+        <h2 className="text-primary-color text-xl font-semibold text-center mb-6  md:text-[27px]">
           Frequently asked
           <span className="block text-center">questions</span>
         </h2>
-        <div>
+        <div className="w-full">
           {faqs.map((faq, index) => (
             <Accordian
               key={index}
