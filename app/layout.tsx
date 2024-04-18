@@ -19,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <div className=" h-[77px] sticky">
-          <Navbar />
+        <div className="max-w-[1440px] mx-auto">
+          <div className=" h-[77px] sticky">
+            <Navbar />
+          </div>
+          <main className="min-h-screen">{children}</main>
+          <Footer />
         </div>
-        <main className="min-h-screen">{children}</main>
-        <Footer />
       </body>
     </html>
   );
